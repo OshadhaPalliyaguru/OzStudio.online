@@ -6,6 +6,31 @@
   <title>Oz Graphics Studio | Creative Agency</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script>
+
+      <!--========== Fav Icon ==========-->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo/studio_fav_icon.png">
+
+       <!--========== Gmail Connected ==========-->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <!-- SweetAlert2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "mvWd6lGac7-wv9iRh",
+      });
+   })();
+</script>
+
+     <!--========== SweertAlert2 CDN ==========-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
 </head>
 <body class="bg-white text-gray-900">
 
@@ -19,7 +44,7 @@
     <div class="space-x-6 hidden md:flex">
       <a href="#services" class="text-gray-700 hover:text-red-700">Services</a>
       <a href="#packages" class="text-gray-700 hover:text-red-700">Packages</a>
-      <a href="./portfolio.html" class="text-gray-700 hover:text-red-700">Portfolio</a>
+      <a href="https://oshadhapalliyaguru.github.io/Portfolio.OzGraphicsStudio.com/" target="_blank" class="text-gray-700 hover:text-red-700">Portfolio</a>
       <a href="#contact" class="text-gray-700 hover:text-red-700">Contact</a>
     </div>
   </div>
@@ -33,7 +58,7 @@
 
     <div class="flex justify-center mb-4">
       <img src="img/logo/oz studios main logo.png" alt="Oz Studio Hero"
-           class="w-48 sm:w-56 md:w-64 lg:w-75 xl:w-80 h-auto object-contain mb-5">
+           class="w-48 sm:w-56 md:w-64 lg:w-75 xl:w-80 h-auto object-contain mb-5 mx-auto">
     </div>
  <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
       Welcome to Oz Graphics Studio
@@ -43,8 +68,11 @@
     </p>
 
     <a href="#contact"
-       class="inline-block bg-red-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-800 transition duration-300">
+       class="inline-block bg-red-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-800 transition duration-300 mb-3">
        Get Started Today
+    </a> <a href="https://oshadhapalliyaguru.github.io/Portfolio.OzGraphicsStudio.com/" target="_blank"
+       class="inline-block bg-red-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-800 transition duration-300">
+       Our Portfolio =>
     </a>
 
   </div>
@@ -53,7 +81,7 @@
 <!-- Department Logos -->
 <section class="py-12 bg-gray-50" data-aos="fade-up">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-8">Our Departments</h2>
+    <h2 class="text-3xl font-bold mb-8">OUR DEPARTMENTS</h2>
     <div class="flex flex-wrap  justify-center gap-8 ">
 
         <img src="img/dep_logos/oz type logo.png" alt="Department 3" class="h-16 w-auto">
@@ -68,18 +96,24 @@
 <!-- Services -->
 <section id="services" class="py-20" data-aos="fade-up">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Our Services</h2>
+    <h2 class="text-3xl font-bold mb-10">OUR SERVICES </h2>
     <div class="grid md:grid-cols-3 gap-8">
       <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-        <div class="icon-loop" id="graphic-icon"></div>
+        <img src="img/icons/photoshop.png" alt="" class=" mx-auto mb-3  w-20 sm:w-20 md:w-24 h-auto "  >
         <h3 class="text-xl font-semibold mb-4">Graphic Design</h3>
         <p>Social media posts, flyers, and promotional material to build your brand.</p>
       </div>
       <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-4">Web Design</h3>
+        <div class="div_twoicons flex ">
+ <img src="img/icons/figma.png" alt="" class=" mx-auto mb-3 w-20 sm:w-20 md:w-24 h-auto" >
+  <img src="img/icons/html.png" alt="" class=" mx-auto mb-3 w-20 sm:w-20 md:w-24 h-auto" >
+        </div>
+        
+        <h3 class="text-xl font-semibold mb-4">Web Design & Development</h3>
         <p>Responsive websites, landing pages, and UI design for your online presence.</p>
       </div>
       <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+         <img src="img/icons/illustrator.png" alt="" class=" mx-auto mb-3 w-20 sm:w-20 md:w-24 h-auto" >
         <h3 class="text-xl font-semibold mb-4">Typesetting</h3>
         <p>Professional typesetting for books, brochures, and corporate documents.</p>
       </div>
@@ -87,35 +121,131 @@
   </div>
 </section>
 
+
+
 <!-- Packages -->
 <section id="packages" class="py-20 bg-gray-50" data-aos="fade-up">
   <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Our Packages</h2>
-    <div class="grid md:grid-cols-3 gap-8">
+    <h2 class="text-3xl font-bold mb-10">OUR PACKAGES </h2>
+
+    <!-- Social Media Design -->
+    <h3 class="text-2xl font-bold  mb-6">Social Media Content Design</h3>
+    <img src="img/dep_logos/oz graphics logo bg removed.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
       <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/gold-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Content King Pack</h4>
+        <p>20 custom posts + 5 reels + strategy guide for max reach.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition"  onclick="openWhatsApp('Can I get details of this service: Social Media Content Design - Content King Pack')">Get Started</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/silver-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Growth Graphic Pack</h4>
+        <p>15 custom social posts + 3 reels. Perfect for scaling up.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Social Media Content Design - Growth Graphic Pack')">Get Started</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/bronze-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
         <h4 class="text-lg font-bold mb-2">Starter Graphic Pack</h4>
-        <p>10 custom social posts + 2 reels. Perfect for fresh starts.</p>
-      </div>
-      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-lg font-bold mb-2">Web Basic</h4>
-        <p>One-page website + mobile-ready + 1 month support.</p>
-      </div>
-      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-        <h4 class="text-lg font-bold mb-2">Pro Typesetting</h4>
-        <p>Up to 50 pages typeset, print-ready & delivered fast.</p>
+        <p>10 custom posts + 2 reels. Ideal for fresh brands.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Social Media Content Design - Starter Graphics Pack')">Get Started</button>
       </div>
     </div>
+
+    <!-- Web Development -->
+    <h3 class="text-2xl font-bold  mb-6">Web Development</h3>
+    <img src="img/dep_logos/oz web logo.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/gold-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Web Premium</h4>
+        <p>Multi-page site + animations + SEO + 3 months support.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Web Development - Web Premium')">Get Started</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/silver-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Web Standard</h4>
+        <p>One-page website + responsive + SEO ready + 1 month support.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Web Development - Web Standard')">Get Started</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/bronze-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Web Starter</h4>
+        <p>Landing page + mobile-ready + 2 weeks support.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Web Development - Web Starter')">Get Started</button>
+      </div>
+    </div>
+
+    <!-- Document & Typesetting -->
+    <h3 class="text-2xl font-bold  ">Document & Typesetting </h3> 
+      <img src="img/dep_logos/oz type logo.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/gold-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Elite Typesetting</h4>
+        <p>Up to 100 pages formatted, print-ready, and styled to perfection.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Document & Typesetting  - Elite TypeSetting')">Get Started</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/silver-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto">
+        <h4 class="text-lg font-bold mb-2">Pro Typesetting</h4>
+        <p>Up to 50 pages typeset, aligned, and export-ready.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition" onclick="openWhatsApp('Can I get details of this service: Document & Typesetting  - Pro TypeSetting')">Get Started</button>
+      </div>
+      <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+        <img src="img/badges/bronze-badge.png" alt="" class="mx-auto mb-3 w-16 sm:w-20 md:w-24 h-auto" >
+        <h4 class="text-lg font-bold mb-2">Basic Formatting</h4>
+        <p>Up to 25 pages formatted and styled for print or PDF.</p>
+        <button class="mt-4 bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition"onclick="openWhatsApp('Can I get details of this service: Document & Typesetting  - Basic TypeSetting')">Get Started</button>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
-<!-- Testimonials -->
-<section class="py-20" data-aos="fade-up">
-  <div class="container mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold mb-10">Happy Clients</h2>
-    <div class="bg-white p-8 rounded-xl shadow max-w-xl mx-auto">
-      <p class="text-gray-600 italic mb-4">"Oz Graphics Studio gave our brand a fresh, professional look. Highly recommend!"</p>
-      <p class="font-semibold">— Your Friend’s Café, Colombo</p>
+<!-- Testimonials Carousel -->
+<section class="py-20 bg-gray-50" data-aos="fade-up">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">HAPPY CLIENTS </h2>
+
+    <!-- Carousel Wrapper -->
+    <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory pb-4 scroll-smooth">
+      
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"Oz Graphics Studio gave our brand a fresh, professional look. Highly recommend!"</p>
+        <p class="font-semibold">— Tharindu Gunasekara</p>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"They understood our style perfectly. Smooth workflow, quick delivery."</p>
+        <p class="font-semibold">— Sajini Fernando</p>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"Their team is creative and professional. 10/10 for branding and design."</p>
+        <p class="font-semibold">—Nimasha Dilhani</p>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"They handled everything smoothly from start to finish."</p>
+        <p class="font-semibold">—Nimasha Dilhani</p>
+      </div>
+
+      <!-- Testimonial Card -->
+      <div class="flex-shrink-0 snap-start bg-white p-6 rounded-xl shadow w-[90%] sm:w-[60%] md:w-[40%] lg:w-[30%] mx-auto">
+        <p class="text-gray-600 italic mb-4">"Delivered on time, and the quality was excellent."
+
+          
+        </p>
+        <p class="font-semibold">—Nimasha Dilhani</p>
+      </div>
+
+      <!-- Add more cards if needed -->
     </div>
   </div>
 </section>
@@ -128,14 +258,17 @@
     <p class="max-w-3xl mx-auto text-gray-600 mb-6">We combine beautiful design with smart strategy to help small businesses grow. Fast turnaround, friendly communication, and designs that get results.</p>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="p-6 bg-white rounded-xl shadow">
+        <img src="img/icons 2/packages.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
         <h4 class="font-semibold mb-2">Affordable Packages</h4>
         <p>Perfect for small businesses & startups — no hidden fees.</p>
       </div>
       <div class="p-6 bg-white rounded-xl shadow">
+        <img src="img/icons 2/result.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
         <h4 class="font-semibold mb-2">Real Results</h4>
         <p>Our designs attract customers & make people take action.</p>
       </div>
       <div class="p-6 bg-white rounded-xl shadow">
+        <img src="img/icons 2/support.png" alt="Department 3" class="h-16 w-auto mx-auto mb-4">
         <h4 class="font-semibold mb-2">Personal Support</h4>
         <p>Work directly with Oshadha — easy, fast, friendly.</p>
       </div>
@@ -147,30 +280,40 @@
 <section id="contact" class="py-20 text-center  text-black" data-aos="fade-up">
   <div class="container mx-auto px-6">
     <h2 class="text-3xl font-bold mb-4">Let’s Bring Your Ideas to Life</h2>
-    <p class="mb-6">Send us a message and get your first consultation for free.</p>
-    <form class="max-w-xl mx-auto text-left bg-white p-6 rounded-xl shadow">
+    <p class="mb-6">Send us a message and get your first consultation for free  we usually reply within 12 hours.</p>
+
+    <form class="max-w-xl mx-auto text-left bg-white p-6 rounded-xl shadow"  id="Form">
       <div class="mb-4">
         <label class="block mb-2 text-gray-700 font-semibold">Name</label>
-        <input type="text" class="w-full border border-gray-300 p-3 rounded" placeholder="Your Name">
+        <input type="text" class="w-full border border-gray-300 p-3 rounded" placeholder="Your Name" id="name" >
       </div>
       <div class="mb-4">
         <label class="block mb-2 text-gray-700 font-semibold">Email</label>
-        <input type="email" class="w-full border border-gray-300 p-3 rounded" placeholder="Your Email">
+        <input type="email" class="w-full border border-gray-300 p-3 rounded" placeholder="Your Email" id="email" >
       </div>
       <div class="mb-4">
         <label class="block mb-2 text-gray-700 font-semibold">Message</label>
-        <textarea class="w-full border border-gray-300 p-3 rounded" rows="4" placeholder="Your Message"></textarea>
+        <textarea class="w-full border border-gray-300 p-3 rounded" rows="4" placeholder="Your Message" id="message"></textarea>
       </div>
-      <button type="submit" class="bg-red-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-800 transition">Send Message</button>
+      <button type="button" class="bg-red-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-800 transition" onclick="sendMail()">Send Message</button>
     </form>
+
+
   </div>
 </section>
 
 <section class="py-20 bg-gradient-to-r from-red-700 to-black text-white text-center" data-aos="fade-up">
   <div class="container mx-auto px-6">
+    <a href="https://wa.me/94714695753" target="_blank" class="inline-block bg-white text-red-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition mb-5">Message on WhatsApp</a>
     <h2 class="text-3xl font-bold mb-4">Let’s Start Your Project</h2>
     <p class="mb-6">Contact us today for a free consultation & your first sample design — see the difference.</p>
-    <a href="https://wa.me/94714695753" target="_blank" class="inline-block bg-white text-red-700 font-semibold py-3 px-6 rounded-full shadow hover:bg-gray-100 transition">Message on WhatsApp</a>
+
+        <ul>
+              
+                    <li><a href="#" class="footer__link" onclick="showPrivacyPolicy()" >Privacy policy  </a></li>
+                    <li><a href="#" class="footer__link" onclick="showTerms()" >Terms of services</a></li>
+                </ul>
+  
   </div>
 </section>
 
